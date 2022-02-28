@@ -6,7 +6,7 @@ libdir=openfst
 if [ $stage -le 0 ]; then
   # Download
   [ ! -f openfst-${version}.tar.gz ] && \
-      wget -c https://www.openfst.org/twiki/pub/FST/FstDownload/openfst-1.6.5.tar.gz
+      wget -c https://www.openfst.org/twiki/pub/FST/FstDownload/openfst-${version}.tar.gz
   tar zxvf openfst-${version}.tar.gz
 fi
 
