@@ -1,4 +1,4 @@
-stage=3
+stage=0
 version=1.6.5
 # openfst library dir
 libdir=openfst
@@ -24,6 +24,7 @@ if [ $stage -le 2 ]; then
   bazel build ...
   popd
 fi
+
 
 if [ $stage -le 3 ];then
   mkdir -p $libdir $libdir/lib
